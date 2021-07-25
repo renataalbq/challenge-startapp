@@ -1,0 +1,47 @@
+.container-pages {
+  padding-top:20px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #999999;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  list-style: none;
+  justify-content: center;
+  cursor: default;
+}
+
+.page-item{
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.page-item:hover {
+  background-color: #7f7f994b;
+  border-radius: 5px;
+}
+
+
+.arrow-button{
+  border: none;
+  list-style: none;
+  background-color: transparent;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.end-button{
+  font-size: 18px;
+  background-color: transparent;
+  color: #FFF;
+  cursor: pointer;
+  border: none;
+  list-style: none;
+  padding-top: 10px;
+}
+

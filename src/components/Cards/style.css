@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat);
+
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.card-title p{
+    font-size: 30px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px;;
+    
+}
+
+.movie-list{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5,200px);
+    gap: 1em;
+    border-radius: 10px;
+}
+
+.movie-list img {
+    height: 280px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.movie-list .overlay{    
+    height: 75px;
+    width: 200px;
+    position: relative;
+    color: #FFF;
+    top:-78px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(22, 22, 22, 0.6);
+    opacity: 0.9;
+    border-bottom-left-radius: 7px;;
+    border-bottom-right-radius: 7px;;
+}
+
+.movie-list .blur {
+    backdrop-filter: blur(8px);
+}
+
+.movie-title{
+    font-size: 16px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.movie-date{
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+@media ( max-width: 1500px){
+    .cards .movie-container .movie-list{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(5,200px);
+        gap: 1em;
+    }
+    
+}
+
+@media ( max-width: 1024px){
+    .cards .movie-container .movie-list{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(4,200px);
+        gap: 1em;
+    }
+    
+}
+
+@media ( max-width: 768px) {
+    .cards .movie-container .movie-list {
+        grid-template-columns: repeat(3, 200px);
+        margin-left: 10px;
+    }
+}
+
+@media ( max-width: 500px) {
+    .card-title p{
+       margin-left: 10px;
+    }
+
+    .cards .movie-container .movie-list {
+        grid-template-columns: repeat(2, 190px);
+        padding: 0;
+        margin: 5px;
+        
+    }
+    .cards .movie-container .movie-list img {
+        height: 270px;
+        width: 190px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .movie-list .overlay{ 
+        width: 190px;
+        top:-78px;
+    
+    }
+}
